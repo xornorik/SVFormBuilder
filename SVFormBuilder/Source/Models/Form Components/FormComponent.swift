@@ -8,12 +8,11 @@
 
 import Foundation
 
-class FormComponent {
+public class FormComponent {
     
-    public var fieldName : String
-    public var placeholder: String?
-    public var fieldValue : String?
-    public var hint : String?
+    public var fieldName : String = "Field Name"
+    public var fieldValue : String = ""
+    public var hint : String = ""
     
     public var fieldNameAllignment : CTTextAlignment = .left
     public var fieldNameColor : UIColor = .black
@@ -22,12 +21,5 @@ class FormComponent {
     public var isMandatory : Bool = true
     public var isReadOnly : Bool = false
     public var isEnabled : Bool = true
-    
-    init(fieldName:String, fieldValue:String?, placeholder: String?, isMandatory: Bool) {
-        self.fieldName = fieldName
-        self.fieldValue = fieldValue
-        self.placeholder = placeholder
-        self.isMandatory = isMandatory
-    }
+    public var isValidationPassed : Bool = false
 }
-

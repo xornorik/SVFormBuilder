@@ -19,6 +19,8 @@ import Foundation
     @IBOutlet var hintLabel: UILabel!
     
     @IBOutlet var hintLabelConstraint: NSLayoutConstraint!
+    @IBOutlet var fieldIconConstraint: NSLayoutConstraint!
+
     
     open var beginEditing: ((SVStringField)->())?
     open var finishEditing: ((SVStringField)->())?
@@ -142,9 +144,17 @@ import Foundation
         xibSetup()
     }
     
-    //    init(formComponenet:FormComponent) {
-    //        super.init(frame: CGRect.zero)
-    //    }
+        init(formComponent:FormComponent) {
+            super.init(frame: CGRect.zero)
+            
+            if let formComponent = formComponent as? TextFC {
+                self.fieldValue = formComponent.fieldName
+                self.isFieldMandatory = formComponent.isMandatory
+                self.placeholder = formComponent.placeholder
+                self.hint = formComponent.hint
+                
+            }
+        }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

@@ -10,6 +10,14 @@
 		AC4E82B12053D60A00FF3692 /* SVStringField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E82B02053D60A00FF3692 /* SVStringField.swift */; };
 		AC9324662053DDFA00BAD018 /* SVStringField.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9324652053DDFA00BAD018 /* SVStringField.xib */; };
 		AC9324682053E6C500BAD018 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9324672053E6C500BAD018 /* Extensions.swift */; };
+		AC93246D2056531400BAD018 /* SVForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93246C2056531400BAD018 /* SVForm.swift */; };
+		AC93246F2056539000BAD018 /* SVSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93246E2056539000BAD018 /* SVSection.swift */; };
+		AC932471205653AB00BAD018 /* SVRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC932470205653AB00BAD018 /* SVRow.swift */; };
+		AC932473205653C600BAD018 /* SVDoubleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC932472205653C600BAD018 /* SVDoubleRow.swift */; };
+		AC9324752056572600BAD018 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9324742056572600BAD018 /* Test.swift */; };
+		AC932477205674BA00BAD018 /* TextFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC932476205674BA00BAD018 /* TextFC.swift */; };
+		AC93247C2056907600BAD018 /* FormBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93247B2056907600BAD018 /* FormBuilderView.swift */; };
+		AC93247E2056916D00BAD018 /* FormBuilderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC93247D2056916D00BAD018 /* FormBuilderView.xib */; };
 		ACA75CC82051374500782CF4 /* SVStringArea.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA75CC72051374500782CF4 /* SVStringArea.xib */; };
 		ACC5DC14204D253800FA8CD7 /* SVFormBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC5DC12204D253800FA8CD7 /* SVFormBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACC5DC1F204D25C600FA8CD7 /* FormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5DC1E204D25C600FA8CD7 /* FormComponent.swift */; };
@@ -21,6 +29,14 @@
 		AC4E82B02053D60A00FF3692 /* SVStringField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVStringField.swift; sourceTree = "<group>"; };
 		AC9324652053DDFA00BAD018 /* SVStringField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVStringField.xib; sourceTree = "<group>"; };
 		AC9324672053E6C500BAD018 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AC93246C2056531400BAD018 /* SVForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVForm.swift; sourceTree = "<group>"; };
+		AC93246E2056539000BAD018 /* SVSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVSection.swift; sourceTree = "<group>"; };
+		AC932470205653AB00BAD018 /* SVRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVRow.swift; sourceTree = "<group>"; };
+		AC932472205653C600BAD018 /* SVDoubleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVDoubleRow.swift; sourceTree = "<group>"; };
+		AC9324742056572600BAD018 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		AC932476205674BA00BAD018 /* TextFC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFC.swift; sourceTree = "<group>"; };
+		AC93247B2056907600BAD018 /* FormBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormBuilderView.swift; sourceTree = "<group>"; };
+		AC93247D2056916D00BAD018 /* FormBuilderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormBuilderView.xib; sourceTree = "<group>"; };
 		ACA75CC72051374500782CF4 /* SVStringArea.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVStringArea.xib; sourceTree = "<group>"; };
 		ACC5DC0F204D253800FA8CD7 /* SVFormBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVFormBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC5DC12204D253800FA8CD7 /* SVFormBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVFormBuilder.h; sourceTree = "<group>"; };
@@ -68,6 +84,48 @@
 			path = SVStringField;
 			sourceTree = "<group>";
 		};
+		AC932469205652D800BAD018 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				AC932470205653AB00BAD018 /* SVRow.swift */,
+				AC932472205653C600BAD018 /* SVDoubleRow.swift */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		AC93246A205652F300BAD018 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				AC93246E2056539000BAD018 /* SVSection.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		AC93246B205652FB00BAD018 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				AC93246C2056531400BAD018 /* SVForm.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		AC93247820568FAE00BAD018 /* FormBuilderView */ = {
+			isa = PBXGroup;
+			children = (
+				AC93247B2056907600BAD018 /* FormBuilderView.swift */,
+				AC93247D2056916D00BAD018 /* FormBuilderView.xib */,
+				AC93247F205692A200BAD018 /* Cells */,
+			);
+			path = FormBuilderView;
+			sourceTree = "<group>";
+		};
+		AC93247F205692A200BAD018 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		ACC5DC05204D253800FA8CD7 = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +165,11 @@
 		ACC5DC1D204D257700FA8CD7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AC93246B205652FB00BAD018 /* Form */,
+				AC93246A205652F300BAD018 /* Section */,
+				AC932469205652D800BAD018 /* Row */,
 				ACC5DC20204D5D9400FA8CD7 /* Form Components */,
+				AC9324742056572600BAD018 /* Test.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC5DC1E204D25C600FA8CD7 /* FormComponent.swift */,
+				AC932476205674BA00BAD018 /* TextFC.swift */,
 			);
 			path = "Form Components";
 			sourceTree = "<group>";
@@ -123,6 +186,7 @@
 		ACC5DC25204F960100FA8CD7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC93247820568FAE00BAD018 /* FormBuilderView */,
 				ACC5DC28204F993900FA8CD7 /* SVTextView */,
 				AC4E82AB20513E8900FF3692 /* Fields */,
 			);
@@ -215,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC93247E2056916D00BAD018 /* FormBuilderView.xib in Resources */,
 				AC9324662053DDFA00BAD018 /* SVStringField.xib in Resources */,
 				ACA75CC82051374500782CF4 /* SVStringArea.xib in Resources */,
 			);
@@ -229,8 +294,15 @@
 			files = (
 				AC9324682053E6C500BAD018 /* Extensions.swift in Sources */,
 				ACC5DC27204F97F500FA8CD7 /* SVStringArea.swift in Sources */,
+				AC93246D2056531400BAD018 /* SVForm.swift in Sources */,
+				AC932473205653C600BAD018 /* SVDoubleRow.swift in Sources */,
+				AC93246F2056539000BAD018 /* SVSection.swift in Sources */,
+				AC932471205653AB00BAD018 /* SVRow.swift in Sources */,
+				AC93247C2056907600BAD018 /* FormBuilderView.swift in Sources */,
 				ACC5DC1F204D25C600FA8CD7 /* FormComponent.swift in Sources */,
+				AC9324752056572600BAD018 /* Test.swift in Sources */,
 				AC4E82B12053D60A00FF3692 /* SVStringField.swift in Sources */,
+				AC932477205674BA00BAD018 /* TextFC.swift in Sources */,
 				ACC5DC2A204F998000FA8CD7 /* SVTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
