@@ -21,7 +21,6 @@ import Foundation
     @IBOutlet var hintLabelConstraint: NSLayoutConstraint!
     @IBOutlet var fieldIconConstraint: NSLayoutConstraint!
 
-    
     open var beginEditing: ((SVStringField)->())?
     open var finishEditing: ((SVStringField)->())?
     
@@ -139,7 +138,6 @@ import Foundation
     }
     
     override init(frame: CGRect) {
-        
         super.init(frame: frame)
         xibSetup()
     }
@@ -152,7 +150,7 @@ import Foundation
                 self.isFieldMandatory = formComponent.isMandatory
                 self.placeholder = formComponent.placeholder
                 self.hint = formComponent.hint
-                
+                //TODO: Complete
             }
         }
     
